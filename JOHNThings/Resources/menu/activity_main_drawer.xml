@@ -6,16 +6,20 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_archives"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_archives"
             android:title="Archives | ICT" />
-    </group>
+		<item
+		android:id="@+id/nav_device_info"
+		android:icon="@drawable/ic_menu_share"
+		android:title="@string/device_info" />
+	</group>
 
     <item android:title="Planned Feature/s">
         <menu>
             <item
-                android:id="@+id/nav_device_info"
+                android:id="@+id/nav_placeholder1"
                 android:icon="@drawable/ic_menu_share"
-                android:title="@string/device_info" />
+                android:title="@string/placeholder1" />
 
         </menu>
     </item>

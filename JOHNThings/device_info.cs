@@ -14,7 +14,7 @@ using AndroidX.AppCompat.App;
 
 namespace JOHNThings.Properties
 {
-    [Activity(Label = "debug")]
+    [Activity(Label = "Device Info")]
     public class debug : AppCompatActivity
     {
         private TextView textView1, textView2, textView3, textView4, textView5, textView6;
@@ -55,10 +55,16 @@ namespace JOHNThings.Properties
             textView4.Text = $"OS: {platform}";
             textView5.Text = $"Android ID: {androidID}";
 
-            if (manufacturer.Equals("samsung", StringComparison.OrdinalIgnoreCase))
+            if (manufacturer.Contains("samsung", StringComparison.OrdinalIgnoreCase))
                 { imageView1.SetImageResource(Resource.Drawable.samsung);}
-            else if (manufacturer.Equals("xiaomi", StringComparison.OrdinalIgnoreCase))
+            else if (manufacturer.Contains("xiaomi", StringComparison.OrdinalIgnoreCase))
             { imageView1.SetImageResource(Resource.Drawable.xiaomi); }
+            else if (manufacturer.Contains("google", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.google); }
+            else if (manufacturer.Contains("vivo", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.vivo); }
+            else if (manufacturer.Contains("huawei", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.huawei); }
         }
 
         private void FindView()
