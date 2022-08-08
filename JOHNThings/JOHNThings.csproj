@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="archives_webview.cs" />
+    <Compile Include="device_info.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,6 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\archives.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\device_info.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

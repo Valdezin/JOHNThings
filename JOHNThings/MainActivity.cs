@@ -13,6 +13,7 @@ using Google.Android.Material.Navigation;
 using Google.Android.Material.Snackbar;
 using archives_website;
 using Xamarin.Essentials;
+using JOHNThings.Properties;
 
 namespace JOHNThings
 {
@@ -82,9 +83,10 @@ namespace JOHNThings
                     StartActivity(archives);
                 }
 
-            else if (id == Resource.Id.nav_share)
+            else if (id == Resource.Id.nav_device_info)
             {
-    
+                Intent device_info = new Intent(this, typeof(debug));
+                StartActivity(device_info);
             }
 
 

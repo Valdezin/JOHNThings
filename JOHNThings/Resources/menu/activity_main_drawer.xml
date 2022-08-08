@@ -13,9 +13,9 @@
     <item android:title="Planned Feature/s">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_device_info"
                 android:icon="@drawable/ic_menu_share"
-                android:title="PL1 Vision" />
+                android:title="@string/device_info" />
 
         </menu>
     </item>
