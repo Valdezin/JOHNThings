@@ -18,6 +18,7 @@ namespace JOHNThings.Properties
     public class debug : AppCompatActivity
     {
         private TextView textView1, textView2, textView3, textView4, textView5, textView6;
+        private ImageView imageView1;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -48,12 +49,16 @@ namespace JOHNThings.Properties
             var androidID = Android.Provider.Settings.Secure.GetString(Android.App.Application.Context.ContentResolver, Android.Provider.Settings.Secure.AndroidId);
 
 
-            textView1.Text = $"Manufacturer :{manufacturer}";
-            textView2.Text = $"Device Model :{device}";
-            textView3.Text = $"Android Version :{version}";
+            textView1.Text = $"Manufacturer: {manufacturer}";
+            textView2.Text = $"Device Model: {device}";
+            textView3.Text = $"Android Version: {version}";
             textView4.Text = $"OS: {platform}";
             textView5.Text = $"Android ID: {androidID}";
 
+            if (manufacturer.Equals("samsung", StringComparison.OrdinalIgnoreCase))
+                { imageView1.SetImageResource(Resource.Drawable.samsung);}
+            else if (manufacturer.Equals("xiaomi", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.xiaomi); }
         }
 
         private void FindView()
@@ -64,6 +69,7 @@ namespace JOHNThings.Properties
             textView4 = FindViewById<TextView>(Resource.Id.textView4);
             textView5 = FindViewById<TextView>(Resource.Id.textView5);
             textView6 = FindViewById<TextView>(Resource.Id.textView5);
+            imageView1 = FindViewById<ImageView>(Resource.Id.imageView1);
         }
     }
 }
