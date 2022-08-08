@@ -8,5 +8,9 @@ Initial Commit function:
 
 - Dedicated button that redirects you to Archives | ICT webpage.
 
+Function/s implemented as of v1.02
+
+- ★Debug Mode added
+
 Planned functions:
-- idunno lul
+- i still dunno lul
