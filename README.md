@@ -8,9 +8,9 @@ Initial Commit function:
 
 - Dedicated button that redirects you to Archives | ICT webpage.
 
-Function/s implemented as of v1.02
+Function/s implemented as of v1.03
 
-- ★Debug Mode added
+- ★Device Info and logos for well known phone brands
 
 Planned functions:
 - i still dunno lul
