@@ -20,6 +20,10 @@
                 android:id="@+id/nav_placeholder1"
                 android:icon="@drawable/ic_menu_share"
                 android:title="@string/placeholder1" />
+			<item
+                android:id="@+id/nav_placeholder2"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/placeholder2" />
 
         </menu>
     </item>

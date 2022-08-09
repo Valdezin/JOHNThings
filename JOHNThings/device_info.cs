@@ -48,13 +48,12 @@ namespace JOHNThings.Properties
 
             var androidID = Android.Provider.Settings.Secure.GetString(Android.App.Application.Context.ContentResolver, Android.Provider.Settings.Secure.AndroidId);
 
-
             textView1.Text = $"Manufacturer: {manufacturer}";
             textView2.Text = $"Device Model: {device}";
             textView3.Text = $"Android Version: {version}";
             textView4.Text = $"OS: {platform}";
             textView5.Text = $"Android ID: {androidID}";
-
+            
             if (manufacturer.Contains("samsung", StringComparison.OrdinalIgnoreCase))
                 { imageView1.SetImageResource(Resource.Drawable.samsung);}
             else if (manufacturer.Contains("xiaomi", StringComparison.OrdinalIgnoreCase))
@@ -65,7 +64,24 @@ namespace JOHNThings.Properties
             { imageView1.SetImageResource(Resource.Drawable.vivo); }
             else if (manufacturer.Contains("huawei", StringComparison.OrdinalIgnoreCase))
             { imageView1.SetImageResource(Resource.Drawable.huawei); }
+            else if (manufacturer.Contains("cherry", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.cherry); }
+            else if (manufacturer.Contains("oppo", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.oppo); }
+            else if (manufacturer.Contains("poco", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.poco); }
+            else if (manufacturer.Contains("realme", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.realme); }
+            else if (manufacturer.Contains("asus", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.asus); }
+            else if (manufacturer.Contains("lenovo", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.lenovo); }
+            else if (manufacturer.Contains("zte", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.zte); }
+            else if (manufacturer.Contains("oneplus", StringComparison.OrdinalIgnoreCase))
+            { imageView1.SetImageResource(Resource.Drawable.oneplus); }
         }
+
 
         private void FindView()
         {

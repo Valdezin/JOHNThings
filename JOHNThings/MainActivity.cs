@@ -89,6 +89,10 @@ namespace JOHNThings
                 StartActivity(device_info);
             }
 
+            else if (id == Resource.Id.nav_placeholder1)
+            {
+               
+            }
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
             drawer.CloseDrawer(GravityCompat.Start);
