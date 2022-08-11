@@ -40,9 +40,6 @@ namespace archives_website
 
             });
 
-
-
-
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -50,7 +47,5 @@ namespace archives_website
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
-
     }
 }

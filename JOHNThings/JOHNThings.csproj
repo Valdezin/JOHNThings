@@ -76,6 +76,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -147,49 +148,55 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\samsung.png" />
+    <AndroidResource Include="Resources\drawable\brand_samsung.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\xiaomi.png" />
+    <AndroidResource Include="Resources\drawable\brand_xiaomi.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\google.png" />
+    <AndroidResource Include="Resources\drawable\brand_google.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\vivo.png" />
+    <AndroidResource Include="Resources\drawable\brand_vivo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\huawei.png" />
+    <AndroidResource Include="Resources\drawable\brand_huawei.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ic_archives.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\idunno.png" />
+    <AndroidResource Include="Resources\drawable\brand_idunno.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cherry.png" />
+    <AndroidResource Include="Resources\drawable\brand_cherry.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\oppo.png" />
+    <AndroidResource Include="Resources\drawable\brand_oppo.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\poco.png" />
+    <AndroidResource Include="Resources\drawable\brand_poco.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\realme.png" />
+    <AndroidResource Include="Resources\drawable\brand_realme.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\asus.png" />
+    <AndroidResource Include="Resources\drawable\brand_asus.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\zte.png" />
+    <AndroidResource Include="Resources\drawable\brand_zte.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\oneplus.png" />
+    <AndroidResource Include="Resources\drawable\brand_oneplus.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lenovo.png" />
+    <AndroidResource Include="Resources\drawable\brand_lenovo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v21\splash_screen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v21\johnthings_splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

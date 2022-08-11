@@ -24,25 +24,13 @@ namespace JOHNThings.Properties
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.device_info);
             FindView();
-            // Device Model (SMG-950U, iPhone10,6)
+
             var device = DeviceInfo.Model;
-
-            // Manufacturer (Samsung)
             var manufacturer = DeviceInfo.Manufacturer;
-
-            // Device Name (Motz's iPhone)
             var deviceName = DeviceInfo.Name;
-
-            // Operating System Version Number (7.0)
             var version = DeviceInfo.VersionString;
-
-            // Platform (Android)
             var platform = DeviceInfo.Platform;
-
-            // Idiom (Phone)
             var idiom = DeviceInfo.Idiom;
-
-            // Device Type (Physical)
             var deviceType = DeviceInfo.DeviceType;
 
 
@@ -55,31 +43,32 @@ namespace JOHNThings.Properties
             textView5.Text = $"Android ID: {androidID}";
             
             if (manufacturer.Contains("samsung", StringComparison.OrdinalIgnoreCase))
-                { imageView1.SetImageResource(Resource.Drawable.samsung);}
+                { imageView1.SetImageResource(Resource.Drawable.brand_samsung);}
             else if (manufacturer.Contains("xiaomi", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.xiaomi); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_xiaomi); }
             else if (manufacturer.Contains("google", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.google); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_google); }
             else if (manufacturer.Contains("vivo", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.vivo); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_vivo); }
             else if (manufacturer.Contains("huawei", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.huawei); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_huawei); }
             else if (manufacturer.Contains("cherry", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.cherry); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_cherry); }
             else if (manufacturer.Contains("oppo", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.oppo); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_oppo); }
             else if (manufacturer.Contains("poco", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.poco); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_poco); }
             else if (manufacturer.Contains("realme", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.realme); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_realme); }
             else if (manufacturer.Contains("asus", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.asus); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_asus); }
             else if (manufacturer.Contains("lenovo", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.lenovo); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_lenovo); }
             else if (manufacturer.Contains("zte", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.zte); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_zte); }
             else if (manufacturer.Contains("oneplus", StringComparison.OrdinalIgnoreCase))
-            { imageView1.SetImageResource(Resource.Drawable.oneplus); }
+            { imageView1.SetImageResource(Resource.Drawable.brand_oneplus); }
+            
         }
 
 
