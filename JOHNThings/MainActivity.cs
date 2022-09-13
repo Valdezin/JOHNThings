@@ -14,6 +14,7 @@ using Google.Android.Material.Snackbar;
 using archives_website;
 using Xamarin.Essentials;
 using JOHNThings.Properties;
+using calculator_jn;
 
 namespace JOHNThings
 {
@@ -89,9 +90,10 @@ namespace JOHNThings
                 StartActivity(device_info);
             }
 
-            else if (id == Resource.Id.nav_placeholder1)
+            else if (id == Resource.Id.nav_calculator)
             {
-               
+                Intent calculator = new Intent(this, typeof(calc_active));
+                StartActivity(calculator);
             }
 
             DrawerLayout drawer = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
