@@ -8,7 +8,7 @@ Initial Commit function:
 
 - Dedicated button that redirects you to Archives | ICT webpage.
 
-Function/s implemented as of v1.03-r2
+Function/s implemented as of v1.03-r3
 
 - Calculator added
 
