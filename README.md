@@ -14,3 +14,13 @@ Function/s implemented as of v1.03-r3
 
 Planned functions:
 - i still dunno lul
+
+# How to build APK:
+
+1) Clone the repo
+2) Open in Visual Studio 2022
+3) Rebuild Solution
+4) Right Click Solution (i.e. JOHNThings) and select Archive
+5) Right Click Solution once more and select View Archives
+6) Click Distribute and create a new keystore if you haven't got one
+7) Transfer APK to real device to use
