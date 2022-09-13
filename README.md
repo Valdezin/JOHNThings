@@ -10,7 +10,7 @@ Initial Commit function:
 
 Function/s implemented as of v1.03-r2
 
-- Splash Screen Added
+- Calculator added
 
 Planned functions:
 - i still dunno lul
